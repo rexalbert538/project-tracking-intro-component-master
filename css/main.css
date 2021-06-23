@@ -1,18 +1,5 @@
-/* Importing fonts */
-@font-face {
-  font-family: 'Barlow';
-  src: url(../fonts/Barlow-Regular.ttf);
-  font-style: normal;
-  font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
 
-/* Importing fonts */
-@font-face {
-  font-family: 'BarlowCon';
-  src: url(../fonts/BarlowCondensed-Regular.ttf);
-  font-style: normal;
-  font-weight: normal;
-}
 
 :root {
   --primary-clr: hsl(0, 100%, 68%);
@@ -36,9 +23,9 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  font-family: 'Barlow';
+  font-family: 'Barlow', sans-serif;
   position: relative;
-  font-size: 90%;
+  font-size: 100%;
 }
 
 img {
@@ -50,13 +37,13 @@ span {
   display: inline-block;
   margin-bottom: 1em;
   text-transform: uppercase;
-  font-family: 'BarlowCon';
+  font-family: 'Barlow', sans-serif;
 }
 
 /* typograph */
 
 h1 {
-  font-family: 'BarlowCon';
+  font-family: 'Barlow Condensed', sans-serif;
   margin-bottom: 0.5em;
 }
 
@@ -68,11 +55,12 @@ p {
 }
 
 .text {
-  padding: 0.2em 0.5em;
+  padding: 0.5em 0.8em;
   background: #222;
   color: #fff;
   border-radius: 25px;
   font-weight: 700;
+  font-size: 0.8rem;
   margin-right: 0.7em;
 }
 
@@ -84,7 +72,7 @@ p {
 .main__title {
   text-transform: uppercase;
   font-size: 2.5rem;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -92,6 +80,9 @@ p {
   width: 310px;
   font-size: 1.1rem;
 }
+
+
+
 
 /* layout */
 
@@ -155,7 +146,7 @@ header {
 .navbar a {
   color: #222;
   text-decoration: none;
-  font-family: 'BarlowCon';
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -182,7 +173,7 @@ header {
   all: unset;
   text-transform: uppercase;
   color: var(--neutral-clr-three);
-  font-family: 'BarlowCon';
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
   cursor: pointer;
 }
@@ -250,7 +241,7 @@ header {
 
 .btn-accent,
 .btn-neutral {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 3em;
   text-decoration: none !important;
 }
